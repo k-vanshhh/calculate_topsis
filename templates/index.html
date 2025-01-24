@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>TOPSIS Web Service</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TOPSIS Web Service</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="file">Upload CSV File:</label>
+            <input type="file" name="file" required>
+            
+            <label for="weights">Enter Weights (e.g., 1,2,3):</label>
+            <input type="text" name="weights" required>
+            
+            <label for="impacts">Enter Impacts (e.g., +,+,-):</label>
+            <input type="text" name="impacts" required>
+            
+            <label for="email">Enter Email:</label>
+            <input type="email" name="email" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
