@@ -1,4 +1,5 @@
 
+
 # TOPSIS Web Application
 
 ## Overview
@@ -12,6 +13,24 @@ The **TOPSIS Web Application** is a web-based platform built using Flask that im
 - **Excel Export**: After calculating the results, the app generates an Excel file with the ranking and score.
 - **Easy to Use**: The user interface allows easy interaction with the application.
 
+---
+
+## Screenshots
+
+### 1. **Home Page**
+This is the landing page where users can upload their CSV file, enter weights and impacts, and submit the form.
+
+![Home Page](/screenshots/image.png)
+
+---
+
+### 2. **Results Page**
+After processing the uploaded data, the application displays a confirmation message and provides an Excel file for download.
+
+![Results Page](/screenshots/2.png)
+
+---
+
 ## Project Setup
 
 ### Prerequisites
@@ -21,98 +40,44 @@ Before running the application, you must have the following installed on your ma
 - **Python 3.x**: Make sure you have Python installed. You can check this by running `python --version` or `python3 --version` in the terminal.
 - **pip**: Python's package installer to install dependencies.
 
+---
+
 ### Installing Dependencies
 
-To set up the project on your local machine, follow these steps:
-
 1. **Clone the Repository**:
-   First, clone the project repository to your local machine. Use the following command in the terminal:
-   
    ```bash
-   git clone https://github.com/k-vanshhh/topsis-cal-webpage
+   git clone https://github.com/k-vanshhh/calculate_topsis
    ```
 
 2. **Navigate to Project Directory**:
-   Change your working directory to the project folder:
-   
    ```bash
-   cd topsis-cal-webpage
+   cd calculate_topsis
    ```
 
 3. **Install Dependencies**:
-   Install the required Python packages using `pip` by running:
-   
    ```bash
    pip install -r requirements.txt
    ```
 
-   This will install all necessary libraries, such as Flask, pandas, and other dependencies listed in `requirements.txt`.
+---
 
+### Running the Application
 
-## How to Run Locally
-
-### Step-by-Step Guide
-
-1. **Install Dependencies**:
-   Ensure that all dependencies are installed:
-   
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Start the Flask Application**:
-   Run the Flask application locally by executing the following command:
-   
+1. **Start the Flask Server**:
    ```bash
    python app.py
    ```
 
-   By default, Flask will run on `http://127.0.0.1:5000/`.
+2. **Access the Application**:
+   Open `http://127.0.0.1:5000/` in your browser to start using the TOPSIS web application.
 
-3. **Access the Web Application**:
-   Open a web browser and go to `http://127.0.0.1:5000/`. You should see the home page of the application, where you can upload the CSV file for analysis.
+---
 
-### Uploading Data
-
-The web app expects a CSV file with the following structure:
-
-- **Column 1**: `Fund Name` (or any identifier for each row/option)
-- **Column 2 and onward**: The criteria for evaluating each option (e.g., P1, P2, P3, etc.)
-
-Here is an example of what the CSV data might look like:
-
-```csv
-Fund Name,P1,P2,P3,P4,P5
-Fund 1,0.8,0.7,0.6,0.9,0.5
-Fund 2,0.7,0.8,0.6,0.8,0.6
-Fund 3,0.6,0.6,0.8,0.7,0.7
-```
-
-### Running the TOPSIS Calculation
-
-1. Upload the CSV file containing your data.
-2. Select the criteria for weights and impacts, if applicable.
-3. Click on the **Calculate** button to perform the TOPSIS analysis.
-4. The app will process the data and generate a ranking for each option based on the TOPSIS method.
-5. Download the results in an Excel format containing the calculated rankings and scores.
-
-## Usage
-
-1. Visit the web application at the provided URL.
-2. Upload a CSV file with the required data (Fund names and criteria).
-3. Select the relevant weights and impacts (if applicable).
-4. Click **Calculate** to generate the TOPSIS results.
-5. Download the results as an Excel file.
-
-## Contributing
+## How to Contribute
 
 We welcome contributions! If you have suggestions or improvements, feel free to fork the repository and submit a pull request.
 
-### How to Contribute
-
-- **Report Issues**: If you find a bug or issue, please open an issue on the GitHub repository.
-- **Enhancements**: Suggest features or improvements by opening a new issue or pull request.
-
+---
 
 ## Acknowledgments
 
@@ -123,4 +88,4 @@ We welcome contributions! If you have suggestions or improvements, feel free to 
 
 ---
 
-Feel free to explore, improve, and contribute to this project!
+**Note**: Replace the placeholder image links (`https://your-image-hosting-link/...`) with the actual URLs of your screenshots after uploading them to a hosting service. Let me know if you need guidance on hosting images or integrating them into the README.
