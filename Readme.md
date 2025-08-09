@@ -85,7 +85,3 @@ We welcome contributions! If you have suggestions or improvements, feel free to 
 - **pandas**: A powerful data manipulation library used for handling and processing CSV data.
 - **NumPy**: A package used for numerical computations, used in the implementation of TOPSIS.
 - **TOPSIS Method**: A well-known multi-criteria decision analysis method for ranking and selecting alternatives.
-
----
-
-**Note**: Replace the placeholder image links (`https://your-image-hosting-link/...`) with the actual URLs of your screenshots after uploading them to a hosting service. Let me know if you need guidance on hosting images or integrating them into the README.
